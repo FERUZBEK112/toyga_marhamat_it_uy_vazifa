@@ -54,8 +54,9 @@ async function loadEvent() {
     document.title=`${eventData.groom} & ${eventData.bride} — Visol oqshomi`;
     const start=new Date(eventData.start),p=parts(start),deadline=parts(new Date(eventData.rsvpDeadline));
     $('#hero-day').textContent=p.day;$('#hero-month').textContent=`${months[Number(p.month)-1].toUpperCase()}, ${p.year}`;
-    const weekday=new Intl.DateTimeFormat('uz-UZ',{weekday:'long',timeZone:'Asia/Tashkent'}).format(start);
-    $('#hero-weekday').textContent=`${weekday[0].toUpperCase()+weekday.slice(1)} · soat ${p.hour}:${p.minute}`;
+    const weekdays=['Yakshanba','Dushanba','Seshanba','Chorshanba','Payshanba','Juma','Shanba'];
+    const weekday=weekdays[new Date(Date.UTC(Number(p.year),Number(p.month)-1,Number(p.day))).getUTCDay()];
+    $('#hero-weekday').textContent=`${weekday} · soat ${p.hour}:${p.minute}`;
     $('#closing-date').textContent=`${p.day} ${months[Number(p.month)-1].toUpperCase()} ${p.year} · TOSHKENT`;
     $('.round-seal span:last-child').textContent=`${p.day} · ${p.month.padStart(2,'0')} · ${p.year.slice(-2)}`;
     $('#rsvp-deadline').textContent=`${deadline.day}-${months[Number(deadline.month)-1]}`;
