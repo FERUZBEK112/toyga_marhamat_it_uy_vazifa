@@ -1,0 +1,8 @@
+{
+  "name": "visol-invitation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Visol — interaktiv o‘zbekcha to‘y taklifnomasi",
+  "engines": { "node": ">=24" },
+  "scripts": { "start": "node server.mjs", "test": "node --test test.mjs" }
+}

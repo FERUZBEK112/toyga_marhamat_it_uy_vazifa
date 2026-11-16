@@ -1,0 +1,5 @@
+.git
+data
+*.sqlite*
+test.mjs
+README.md

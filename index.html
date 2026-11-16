@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f0"><meta name="description" content="Azizbek va Madinaning visol oqshomiga taklifnoma. Dastur, manzil va ishtirokingizni tasdiqlash — barchasi bir joyda.">
+  <title>Azizbek & Madina — Visol oqshomi</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Asosiy qismga o‘tish</a>
+  <div class="topline"><span class="tiny-star">✧</span> BIR KUN. BIR UMRLIK XOTIRA. <span class="tiny-star">✧</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Visol bosh sahifa">visol<span>®</span></a>
+    <nav aria-label="Asosiy navigatsiya"><a href="#story">Bizning hikoya</a><a href="#program">To‘y dasturi</a><a href="#gallery">Lahzalar</a><a href="#location">Manzil</a></nav>
+    <a href="#rsvp" class="nav-cta">Mehmon bo‘laman <span>↗</span></a>
+    <button class="menu-btn" aria-label="Menyuni ochish" aria-expanded="false">☰</button>
+  </header>
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="short-line"></span> SIZNI TO‘YIMIZGA TAKLIF QILAMIZ</p>
+        <h1><span data-groom>Azizbek</span><span class="name-bottom"><i>&</i> <span data-bride>Madina</span></span></h1>
+        <p class="hero-desc" id="welcome">Hayotimizning eng go‘zal sahifasini<br>siz bilan birga ochishni istaymiz.</p>
+        <div class="date-strip"><span class="date-day" id="hero-day">22</span><div><strong id="hero-month">MAY, 2027</strong><span id="hero-weekday">Shanba · soat 18:00</span></div><span class="date-divider"></span><span class="date-location"><svg><use href="#i-pin"/></svg><span>Toshkent,<br><b data-venue>Navro‘z saroyi</b></span></span></div>
+        <div class="hero-actions"><a class="button primary" href="#rsvp">Ishtirokni tasdiqlash <span>↗</span></a><a class="text-link" href="/event.ics"><svg><use href="#i-calendar"/></svg> Taqvimga qo‘shish</a></div>
+        <p class="hero-footnote"><span class="little-heart">♡</span> Sizning tashrifingiz — biz uchun eng katta sovg‘a.</p>
+      </div>
+      <div class="hero-visual">
+        <div class="arch-outline"></div>
+        <img class="hero-image" src="/hero.jpg" alt="Ochiq osmon ostidagi gullar bilan bezatilgan romantik to‘y marosimi" fetchpriority="high">
+        <div class="photo-tag"><span>together</span><small>IS A BEAUTIFUL PLACE TO BE</small></div>
+        <div class="round-seal"><span>SEVGI BILAN</span><svg><use href="#i-rings"/></svg><span>22 · 05 · 27</span></div>
+        <span class="photo-caption">A NEW CHAPTER OF OUR STORY</span>
+      </div>
+      <a href="#countdown" class="scroll-cue"><span>GO‘ZAL KUNGA BIRGA</span><span>↓</span></a>
+    </section>
+    <section class="countdown-section" id="countdown" aria-label="To‘ygacha qolgan vaqt">
+      <div><p class="eyebrow">KUTILGAN KUN YAQIN</p><h2>Baxtimizga <i>sherik bo‘ling.</i></h2></div>
+      <div class="countdown" role="timer" aria-label="Qolgan vaqt"><div><strong id="days">—</strong><span>KUN</span></div><b>:</b><div><strong id="hours">—</strong><span>SOAT</span></div><b>:</b><div><strong id="minutes">—</strong><span>DAQIQA</span></div><b>:</b><div><strong id="seconds">—</strong><span>SONIYA</span></div></div>
+      <p class="countdown-status" id="countdown-status"></p>
+    </section>
+    <section class="story section-wrap" id="story">
+      <div class="story-photos reveal"><img src="/gallery-1.jpg" alt="Gullar va nafis detallar bilan bezatilgan to‘y muhiti" loading="lazy"><div class="story-small"><img src="/gallery-2.jpg" alt="To‘y oqshomining bayramona dasturxoni" loading="lazy"></div><span class="photo-year">our forever<br><i>starts here.</i></span></div>
+      <div class="story-text reveal"><p class="eyebrow">IKKI QALB. BIR MANZIL.</p><h2>Ba’zi uchrashuvlar<br><i>taqdirga aylanadi.</i></h2><p>Qadrli yaqinlarimiz, aziz do‘stlar!</p><p>Mehrdan boshlangan hikoyamiz endi yangi sahifaga ko‘chmoqda. Ushbu unutilmas kunimizni sizlarning duolaringiz, samimiy tilaklaringiz va tabassumlaringiz bilan boshlashni istaymiz.</p><p>Biz uchun eng chiroyli manzara — bir dasturxon atrofida jam bo‘lgan qadrdonlarimiz.</p><div class="signature"><span data-groom>Azizbek</span> <i>&</i> <span data-bride>Madina</span><svg><use href="#i-heart"/></svg></div></div>
+    </section>
+    <section class="program-section" id="program"><div class="section-wrap">
+      <div class="section-heading reveal"><div><p class="eyebrow">HAR LAHZASI QADRLI</p><h2>Oqshom <i>dasturi</i></h2></div><p>Birga kulamiz, birga quvonamiz.<br>Har bir lahza xotiraga aylanadi.</p></div>
+      <div class="program-grid" id="schedule"></div>
+      <div class="program-note"><svg><use href="#i-clock"/></svg> Barcha vaqtlar Toshkent vaqti bilan (UTC+5). Dasturda kichik o‘zgarishlar bo‘lishi mumkin.</div>
+    </div></section>
+    <section class="gallery-section section-wrap" id="gallery">
+      <div class="section-heading reveal"><div><p class="eyebrow">SO‘ZLARDAN KO‘RA KO‘PROQ</p><h2>Baxtli <i>lahzalar</i></h2></div><div class="slider-controls"><span id="slide-count">01 / 04</span><button class="circle-button" id="prev-slide" aria-label="Oldingi surat">←</button><button class="circle-button" id="next-slide" aria-label="Keyingi surat">→</button></div></div>
+      <div class="gallery-stage"><button class="gallery-main" id="gallery-open" aria-label="Suratni kattalashtirish"><img id="gallery-image" src="/gallery-1.jpg" alt="To‘y bezaklari" loading="lazy"><span class="gallery-expand">↗ <span>Kattalashtirish</span></span></button><div class="gallery-side"><img id="gallery-preview" src="/gallery-2.jpg" alt="Keyingi surat" loading="lazy"><p>Some moments<br><i>last forever.</i><span>Qalblarda qoladigan xotiralar.</span></p></div></div>
+      <div class="gallery-bottom"><p>Ilhom uchun tanlangan to‘y suratlari · namuna galereya</p><div class="slider-dots" id="slider-dots" aria-label="Surat tanlash"></div></div>
+    </section>
+    <section class="location-section" id="location"><div class="section-wrap location-grid">
+      <div class="location-copy reveal"><p class="eyebrow">BAHTLI MANZILIMIZ</p><h2>Uchrashuv joyimiz —<br><i>quvonch manzili.</i></h2><div class="venue-details"><svg><use href="#i-pin"/></svg><div><h3 data-venue>Navro‘z tantanalar saroyi</h3><p id="venue-address">Toshkent shahri</p><small id="venue-note"></small></div></div><button class="button primary" id="open-map">Manzilni ko‘rish <span>↗</span></button><p class="location-note">Yo‘lga chiqishdan oldin manzilni xaritada tekshiring.</p></div>
+      <div class="map-card"><div class="map-art" aria-hidden="true"><div class="park park-one"></div><div class="park park-two"></div><div class="river"></div><span class="map-label l-one">TOSHKENT</span><span class="map-label l-two">YUNUSOBOD</span><div class="map-marker"><svg><use href="#i-pin"/></svg></div></div><div class="map-card-bottom"><span><small>SIZNI SHU YERDA KUTAMIZ</small><strong data-venue>Navro‘z tantanalar saroyi</strong></span><button id="open-map-card" class="circle-button" aria-label="Xaritani ochish">↗</button></div></div>
+    </div></section>
+    <section class="rsvp-section section-wrap" id="rsvp">
+      <div class="rsvp-intro reveal"><span class="rsvp-flower">✳</span><p class="eyebrow">BIRGA BO‘LSAK, YANADA GO‘ZAL</p><h2>Sizni <i>kutamiz.</i></h2><p>Oqshomimizni sizning tashrifingiz bezaydi.<br>Kelishingiz haqida bizga xabar bering.</p><span class="deadline">Iltimos, <b id="rsvp-deadline">15-may</b>gacha javob bering.</span><div class="dress-note"><span>♡</span><p><strong>Eng chiroyli libosingiz — tabassumingiz.</strong><br>Bayramona va o‘zingizga qulay kiyimda keling.</p></div></div>
+      <form id="rsvp-form" class="rsvp-form"><h3>Mehmonlar ro‘yxati</h3><p class="form-desc">Bir necha soniyada javobingizni qoldiring.</p><label for="guest-name">Ism va familiyangiz <span>*</span></label><input id="guest-name" name="name" autocomplete="name" placeholder="Masalan, Feruzbek Mirjavxarov" required minlength="2" maxlength="80"><fieldset><legend>Tashrif buyurasizmi? <span>*</span></legend><div class="attendance-options"><label><input type="radio" name="attendance" value="yes" checked><span>Albatta, kelaman <b>♡</b></span></label><label><input type="radio" name="attendance" value="no"><span>Afsus, kelolmayman</span></label></div></fieldset><label for="guest-count">Necha kishi bo‘lib kelasiz?</label><select id="guest-count" name="count"><option value="1">1 kishi — o‘zim</option><option value="2">2 kishi</option><option value="3">3 kishi</option><option value="4">4 kishi</option><option value="5">5 kishi</option><option value="6">6 kishi</option></select><label for="guest-note">Bizga tilagingiz <span class="optional">(ixtiyoriy)</span></label><textarea id="guest-note" name="note" rows="3" placeholder="Qalbingizdagi eng samimiy so‘zlar…" maxlength="500"></textarea><div class="honeypot" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div><button type="submit" class="button primary" id="submit-rsvp">Javobni yuborish <span>↗</span></button><p class="privacy-note">Ismingiz va javobingiz faqat tadbir tashkilotchisi uchun saqlanadi.</p><p role="status" aria-live="polite" id="form-status"></p></form>
+    </section>
+    <section class="closing"><span>♡</span><p>Eng go‘zal kunlar — yaqinlar bilan.</p><h2><span data-groom>Azizbek</span> <i>&</i> <span data-bride>Madina</span></h2><div class="closing-date" id="closing-date">22 MAY 2027 · TOSHKENT</div><button class="text-link" id="share-invite"><svg><use href="#i-share"/></svg> Taklifnomani ulashish</button></section>
+  </main>
+  <footer><a class="brand" href="#home">visol<span>®</span></a><p>Mehr bilan tayyorlandi <span>♡</span> Feruzbek Mirjavxarov</p><span class="demo-tag">NAMUNA TAKLIFNOMA</span></footer>
+  <button class="music-button" id="music-toggle" aria-label="Fon musiqasini yoqish" aria-pressed="false"><svg><use href="#i-music"/></svg><span>Musiqa</span><span class="music-state">OFF</span></button>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="image-dialog" class="image-dialog" aria-label="Suratlar galereyasi"><button class="modal-close" aria-label="Galereyani yopish">×</button><button class="lightbox-prev" aria-label="Oldingi katta surat">←</button><img id="lightbox-image" alt="Kattalashtirilgan surat"><button class="lightbox-next" aria-label="Keyingi katta surat">→</button><p id="lightbox-caption"></p></dialog>
+  <dialog id="map-dialog" class="map-dialog" aria-labelledby="map-title"><button class="modal-close" aria-label="Xaritani yopish">×</button><p class="eyebrow">MANZIL</p><h2 id="map-title" data-venue>Navro‘z tantanalar saroyi</h2><p id="modal-address">Toshkent shahri</p><p class="map-disclaimer">Namuna manzil. Borishdan oldin aniq to‘yxonani tashkilotchi bilan tasdiqlang.</p><iframe id="map-frame" title="Tadbir joyi xaritada" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><a class="button primary" id="directions" target="_blank" rel="noopener noreferrer">Google Maps’da yo‘l olish ↗</a></dialog>
+  <dialog id="success-dialog" class="success-dialog" aria-labelledby="success-title"><button class="modal-close" aria-label="Oynani yopish">×</button><span class="success-icon">♡</span><p class="eyebrow">JAVOBINGIZ QABUL QILINDI</p><h2 id="success-title">Katta <i>rahmat!</i></h2><p id="success-copy">Siz bilan uchrashishni intiqlik bilan kutamiz.</p><a class="button primary" href="/event.ics">Taqvimga saqlash <span>↗</span></a><button class="text-link modal-done">Taklifnomaga qaytish</button></dialog>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.7"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 2v6m10-6v6M3 11h18m-13 5h2m4 0h2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-rings" viewBox="0 0 24 24"><circle cx="8" cy="14" r="6"/><circle cx="16" cy="14" r="6"/><path d="m9 4 3-3 3 3-3 4Z"/></symbol>
+    <symbol id="i-flower" viewBox="0 0 24 24"><path d="M12 12c-9-1-6-12-1-7 3-8 10-2 5 3 8-2 10 7 2 8 5 6-3 12-6 5-4 7-12 1-7-5-8-1-6-10 2-8"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-glass" viewBox="0 0 24 24"><path d="M7 2h10l1 7a6 6 0 0 1-12 0l1-7Zm-1 6h12m-6 7v7m-5 0h10"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3ZM20 2v4m-2-2h4"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l11-3v13M9 8l11-3"/><ellipse cx="6" cy="18" rx="3" ry="2.5"/><ellipse cx="17" cy="15" rx="3" ry="2.5"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m9 10 6-3m-6 7 6 3"/></symbol>
+  </defs></svg>
+</body></html>
